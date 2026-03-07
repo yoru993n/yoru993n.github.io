@@ -262,6 +262,9 @@ body {
 }
 .btn-small:hover { background: var(--primary-d); }
 
+.btn-wsp { background: #25d366; }
+.btn-wsp:hover { background: #1da851; }
+
 /* ============================================================
    MARCAS
    ============================================================ */
@@ -374,12 +377,117 @@ body {
 .footer-links a:hover { color: #fff; }
 
 /* ============================================================
-   RESPONSIVE
+   MENÚ HAMBURGUESA
+   ============================================================ */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  margin-left: auto;
+  padding: 4px;
+  background: none;
+  border: none;
+}
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+  transition: all .3s ease;
+}
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ============================================================
+   RESPONSIVE — Tablets (max 900px)
+   ============================================================ */
+@media (max-width: 900px) {
+  .cat-grid { grid-template-columns: repeat(2, 1fr); }
+  .prod-grid { grid-template-columns: repeat(2, 1fr); }
+  .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ============================================================
+   RESPONSIVE — Móviles (max 768px)
    ============================================================ */
 @media (max-width: 768px) {
-  .nav-links { display: none; }
-  .hero { clip-path: none; padding: 60px 0; }
+
+  /* Navbar */
+  .hamburger { display: flex; }
+  .btn-nav { display: none; }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: var(--dark2);
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 0;
+    box-shadow: 0 8px 24px rgba(0,0,0,.4);
+    z-index: 99;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links li { width: 100%; text-align: center; }
+  .nav-links a {
+    display: block;
+    padding: 16px;
+    border-bottom: 1px solid rgba(255,255,255,.07);
+    font-size: 1rem;
+  }
+
+  /* Hero */
+  .hero { clip-path: none; padding: 50px 0 60px; }
+  .hero h1 { font-size: 2rem; }
+  .hero p { font-size: 1rem; }
+  .hero-actions { flex-direction: column; }
+  .hero-actions a { text-align: center; }
+  .hero-stats { gap: 1.2rem; }
+  .stat strong { font-size: 1.3rem; }
+
+  /* Catálogo */
+  .categories { padding: 60px 0 50px; }
+  .cat-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .cat-card { padding: 1.4rem 1rem; }
+  .cat-icon { font-size: 2rem; }
+  .cat-card h3 { font-size: .95rem; }
+
+  /* Productos */
+  .products { padding: 60px 0; }
+  .prod-grid { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
+
+  /* Beneficios */
+  .benefits { padding: 60px 0; }
+  .benefits-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+
+  /* Marcas */
+  .brands-list span { padding: 8px 16px; font-size: .85rem; }
+
+  /* Contacto */
+  .contact { padding: 60px 0; }
   .form-row { grid-template-columns: 1fr; }
+
+  /* Footer */
   .footer-inner { flex-direction: column; text-align: center; }
-  .hero-stats { gap: 1.5rem; }
+  .footer-links { justify-content: center; }
+}
+
+/* ============================================================
+   RESPONSIVE — Móviles pequeños (max 480px)
+   ============================================================ */
+@media (max-width: 480px) {
+  .cat-grid { grid-template-columns: 1fr; }
+  .benefits-grid { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 1.75rem; }
+  .hero-stats { flex-wrap: wrap; gap: 1rem; }
+  .stat { min-width: 80px; }
+  .section-title { font-size: 1.5rem; }
+  .logo { font-size: 1.1rem; }
+  .prod-grid { max-width: 100%; }
 }
