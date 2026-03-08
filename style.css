@@ -5,16 +5,18 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --primary:   #e63946;
-  --primary-d: #c1121f;
-  --primary-l: rgba(230,57,70,.12);
-  --dark:      #0f1923;
-  --dark2:     #162030;
-  --mid:       #1e2d3d;
-  --light:     #f4f6f9;
-  --text:      #1a1a2e;
+  /* Paleta autopartes: naranja/ámbar + negro industrial */
+  --primary:   #f97316;
+  --primary-d: #ea580c;
+  --primary-l: rgba(249,115,22,.14);
+  --accent:    #fbbf24;
+  --dark:      #0c0c0e;
+  --dark2:     #141418;
+  --mid:       #1c1c22;
+  --light:     #f8f6f3;
+  --text:      #1a1a1e;
   --muted:     #64748b;
-  --border:    #e2e8f0;
+  --border:    #e8e4de;
   --radius:    14px;
   --radius-sm: 8px;
   --shadow:    0 4px 24px rgba(0,0,0,.08);
@@ -51,7 +53,7 @@ body { font-family: 'Inter', sans-serif; color: var(--text); background: #fff; l
   margin-bottom: 1rem;
 }
 .section-label.center { display: block; text-align: center; }
-.section-label.light  { color: #ff8a93; background: rgba(230,57,70,.18); }
+.section-label.light  { color: #fcd34d; background: rgba(249,115,22,.22); }
 
 /* ============================================================
    SCROLL PROGRESS
@@ -61,7 +63,7 @@ body { font-family: 'Inter', sans-serif; color: var(--text); background: #fff; l
   top: 0; left: 0;
   height: 3px;
   width: 0%;
-  background: linear-gradient(90deg, var(--primary), #ff6b6b);
+  background: linear-gradient(90deg, var(--primary), var(--accent));
   z-index: 9999;
   transition: width .1s linear;
 }
@@ -128,7 +130,7 @@ body { font-family: 'Inter', sans-serif; color: var(--text); background: #fff; l
   transition: background var(--t), box-shadow var(--t);
 }
 .navbar.scrolled {
-  background: rgba(15,25,35,.97);
+  background: rgba(12,12,14,.97);
   box-shadow: 0 4px 30px rgba(0,0,0,.5);
   backdrop-filter: blur(12px);
 }
@@ -183,6 +185,8 @@ body { font-family: 'Inter', sans-serif; color: var(--text); background: #fff; l
 }
 .nav-links a:hover { color: #fff; }
 .nav-links a:hover::after { transform: scaleX(1); }
+.nav-links a.active { color: #fff; }
+.nav-links a.active::after { transform: scaleX(1); }
 
 .btn-nav {
   background: var(--primary);
@@ -195,16 +199,16 @@ body { font-family: 'Inter', sans-serif; color: var(--text); background: #fff; l
   white-space: nowrap;
   transition: background var(--t), transform var(--t), box-shadow var(--t);
   flex-shrink: 0;
-  box-shadow: 0 3px 12px rgba(230,57,70,.35);
+  box-shadow: 0 3px 12px rgba(249,115,22,.4);
 }
-.btn-nav:hover { background: var(--primary-d); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(230,57,70,.45); }
+.btn-nav:hover { background: var(--primary-d); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(249,115,22,.5); }
 
 /* ============================================================
    HERO
    ============================================================ */
 .hero {
   position: relative;
-  background: linear-gradient(135deg, #0a1520 0%, var(--dark2) 55%, #0a2540 100%);
+  background: linear-gradient(135deg, #0c0c0e 0%, #1a1510 40%, var(--dark2) 70%, #0f0d0a 100%);
   color: #fff;
   padding: 110px 0 110px;
   overflow: hidden;
@@ -221,14 +225,14 @@ body { font-family: 'Inter', sans-serif; color: var(--text); background: #fff; l
   background-size: 32px 32px;
   pointer-events: none;
 }
-/* Glows */
+/* Glows — tonos naranja/ámbar autopartes */
 .hero::after {
   content: '';
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 75% 25%, rgba(230,57,70,.2) 0%, transparent 45%),
-    radial-gradient(circle at 10% 75%, rgba(0,100,200,.15) 0%, transparent 45%);
+    radial-gradient(circle at 75% 25%, rgba(249,115,22,.25) 0%, transparent 45%),
+    radial-gradient(circle at 10% 75%, rgba(251,191,36,.12) 0%, transparent 45%);
   pointer-events: none;
 }
 
@@ -257,9 +261,9 @@ body { font-family: 'Inter', sans-serif; color: var(--text); background: #fff; l
 
 .hero-badge {
   display: inline-block;
-  background: rgba(230,57,70,.15);
-  border: 1px solid rgba(230,57,70,.4);
-  color: #ff8a93;
+  background: rgba(249,115,22,.2);
+  border: 1px solid rgba(249,115,22,.5);
+  color: #fcd34d;
   padding: 6px 18px;
   border-radius: 50px;
   font-size: .73rem;
@@ -311,9 +315,9 @@ body { font-family: 'Inter', sans-serif; color: var(--text); background: #fff; l
   display: inline-flex;
   align-items: center;
   gap: .5rem;
-  box-shadow: 0 4px 20px rgba(230,57,70,.35);
+  box-shadow: 0 4px 20px rgba(249,115,22,.4);
 }
-.btn-primary:hover { background: var(--primary-d); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(230,57,70,.5); }
+.btn-primary:hover { background: var(--primary-d); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(249,115,22,.55); }
 
 .btn-outline {
   border: 2px solid rgba(255,255,255,.28);
@@ -329,6 +333,8 @@ body { font-family: 'Inter', sans-serif; color: var(--text); background: #fff; l
   gap: .5rem;
 }
 .btn-outline:hover { border-color: rgba(255,255,255,.7); background: rgba(255,255,255,.07); }
+.btn-outline-dark { border-color: var(--primary); color: var(--text); }
+.btn-outline-dark:hover { border-color: var(--primary-d); background: var(--primary-l); color: var(--text); }
 
 /* Ola inferior del hero */
 .hero-wave {
@@ -337,6 +343,22 @@ body { font-family: 'Inter', sans-serif; color: var(--text); background: #fff; l
   line-height: 0;
 }
 .hero-wave svg { width: 100%; height: 60px; display: block; }
+
+/* Hero para páginas internas */
+.page-hero {
+  background: linear-gradient(135deg, #0c0c0e 0%, #1a1510 50%, var(--dark2) 100%);
+  color: #fff;
+  padding: 80px 0 60px;
+  text-align: center;
+}
+.page-hero .section-label.light { display: inline-block; }
+.page-title {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+.page-hero .section-sub { margin-bottom: 0; }
 
 /* ============================================================
    STATS BAR
@@ -369,7 +391,7 @@ body { font-family: 'Inter', sans-serif; color: var(--text); background: #fff; l
   transform: scaleX(0);
   transition: transform var(--t);
 }
-.stat-item:hover { background: #fdf1f2; }
+.stat-item:hover { background: #fff8f0; }
 .stat-item:hover::before { transform: scaleX(1); }
 .stat-item:last-child { border-right: none; }
 
@@ -394,6 +416,7 @@ body { font-family: 'Inter', sans-serif; color: var(--text); background: #fff; l
    NOSOTROS
    ============================================================ */
 .about { padding: 30px 0 90px; background: #fff; }
+.about-teaser .about-cards { display: none; }
 .about-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
 .about-text .section-label { margin-bottom: 1rem; }
 .about-text h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 800; line-height: 1.2; margin-bottom: 1.2rem; }
@@ -464,7 +487,7 @@ body { font-family: 'Inter', sans-serif; color: var(--text); background: #fff; l
    MARCAS — Grid de logos
    ============================================================ */
 .brands {
-  background: linear-gradient(160deg, #0a1520 0%, var(--dark2) 100%);
+  background: linear-gradient(160deg, #0c0c0e 0%, #141418 50%, var(--dark2) 100%);
   padding: 90px 0 60px;
 }
 .brands-logo-grid {
@@ -494,34 +517,40 @@ body { font-family: 'Inter', sans-serif; color: var(--text); background: #fff; l
 }
 
 .brand-logo-img {
-  width: 110px;
-  height: 55px;
+  width: 120px;
+  height: 60px;
+  min-height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
   overflow: hidden;
+  background: rgba(255,255,255,.03);
 }
 .brand-logo-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
   transition: transform var(--t);
+  display: block;
 }
 .brand-card:hover .brand-logo-img img { transform: scale(1.05); }
-.brand-abbr {
-  font-size: .95rem;
+.brand-logo-img .brand-abbr {
+  font-size: .75rem;
   font-weight: 900;
-  color: var(--bc, #fff);
+  color: var(--bt, #fff);
   letter-spacing: .04em;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
-  background: var(--bc, #333);
-  border-radius: 6px;
+  min-height: 60px;
+  background: var(--bc, #2a2a2e);
+  border-radius: 8px;
 }
 
 .brand-name {
@@ -549,8 +578,8 @@ body { font-family: 'Inter', sans-serif; color: var(--text); background: #fff; l
   width: 80px;
   z-index: 1;
 }
-.brands-marquee-wrap::before { left: 0; background: linear-gradient(to right, #162030, transparent); }
-.brands-marquee-wrap::after  { right: 0; background: linear-gradient(to left, #162030, transparent); }
+.brands-marquee-wrap::before { left: 0; background: linear-gradient(to right, #141418, transparent); }
+.brands-marquee-wrap::after  { right: 0; background: linear-gradient(to left, #141418, transparent); }
 
 .brands-marquee { display: flex; width: 100%; }
 .marquee-track {
@@ -664,7 +693,7 @@ body { font-family: 'Inter', sans-serif; color: var(--text); background: #fff; l
    CONTACTO
    ============================================================ */
 .contact {
-  background: linear-gradient(135deg, #0a1520 0%, #0a2540 100%);
+  background: linear-gradient(135deg, #0c0c0e 0%, #1a1510 50%, #141418 100%);
   padding: 90px 0;
   position: relative;
   overflow: hidden;
@@ -673,8 +702,8 @@ body { font-family: 'Inter', sans-serif; color: var(--text); background: #fff; l
   content: '';
   position: absolute; inset: 0;
   background:
-    radial-gradient(circle at 15% 50%, rgba(230,57,70,.14) 0%, transparent 50%),
-    radial-gradient(circle at 85% 20%, rgba(0,100,200,.1) 0%, transparent 50%);
+    radial-gradient(circle at 15% 50%, rgba(249,115,22,.18) 0%, transparent 50%),
+    radial-gradient(circle at 85% 20%, rgba(251,191,36,.1) 0%, transparent 50%);
   pointer-events: none;
 }
 .contact-inner {
@@ -747,7 +776,7 @@ body { font-family: 'Inter', sans-serif; color: var(--text); background: #fff; l
 .form-group textarea:not(:placeholder-shown) ~ label {
   top: 6px;
   font-size: .72rem;
-  color: #ff8a93;
+  color: #fcd34d;
 }
 
 .btn-full { width: 100%; justify-content: center; font-size: 1rem; padding: 14px; }
@@ -886,7 +915,7 @@ body { font-family: 'Inter', sans-serif; color: var(--text); background: #fff; l
   .nav-links {
     display: none;
     position: absolute; top: 66px; left: 0; right: 0;
-    background: rgba(15,25,35,.98);
+    background: rgba(12,12,14,.98);
     flex-direction: column; align-items: stretch; gap: 0;
     padding: .5rem 0;
     box-shadow: 0 12px 28px rgba(0,0,0,.5);

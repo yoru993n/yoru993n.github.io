@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Importadora Repuestos — Autopartes y Maquinaria</title>
+  <title>Nosotros — Importadora Repuestos</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 </head>
-<body class="page-inicio">
+<body class="page-nosotros">
 
   <div class="scroll-progress" id="scrollProgress"></div>
 
@@ -27,9 +27,9 @@
       </a>
       <nav>
         <ul class="nav-links" id="nav-links">
-          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="index.html">Inicio</a></li>
           <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="nosotros.html" class="active">Nosotros</a></li>
           <li><a href="marcas.html">Marcas</a></li>
           <li><a href="ubicaciones.html">Ubicaciones</a></li>
           <li><a href="contacto.html">Contáctenos</a></li>
@@ -42,103 +42,43 @@
     </div>
   </header>
 
-  <section class="hero" id="inicio">
-    <div class="hero-particles" aria-hidden="true">
-      <span class="particle">⚙</span>
-      <span class="particle">🔩</span>
-      <span class="particle">⚙</span>
-      <span class="particle">🔧</span>
-      <span class="particle">⚙</span>
-      <span class="particle">🔩</span>
-    </div>
-    <div class="container hero-content">
-      <div class="hero-text">
-        <span class="hero-badge reveal-up delay-0">IMPORTADORA Y MAYORISTA DE REPUESTO</span>
-        <h1 class="reveal-up delay-1">Lo Mejor en<br /><span class="hero-highlight">Autopartes</span></h1>
-        <p class="reveal-up delay-2">Somos un comercializador de repuestos de vehículo para el mercado colombiano con más de 25 años de experiencia. Contamos con varios puntos de venta y creemos en las personas.</p>
-        <div class="hero-actions reveal-up delay-3">
-          <a href="contacto.html" class="btn-primary">Cotiza Aquí</a>
-          <a href="tel:3143952278" class="btn-outline">📞 3143952278</a>
-        </div>
-      </div>
-    </div>
-    <div class="hero-wave" aria-hidden="true">
-      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#fff"/></svg>
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label center light">IMPORTADORA DE REPUESTOS</span>
+      <h1 class="page-title">Nosotros</h1>
+      <p class="section-sub white">25 años de trayectoria en el mercado de autopartes</p>
     </div>
   </section>
 
-  <section class="stats-bar">
-    <div class="container stats-grid">
-      <div class="stat-item">
-        <strong><span class="counter" data-target="512">0</span><span class="stat-plus">+</span></strong>
-        <span>MARCAS</span>
-      </div>
-      <div class="stat-item">
-        <strong><span class="counter" data-target="25">0</span><span class="stat-plus">+</span></strong>
-        <span>AÑOS DE EXPERIENCIA</span>
-      </div>
-      <div class="stat-item">
-        <strong><span class="counter" data-target="1120">0</span><span class="stat-plus">+</span></strong>
-        <span>CLIENTES SATISFECHOS</span>
-      </div>
-      <div class="stat-item">
-        <strong><span class="counter" data-target="1520">0</span><span class="stat-plus">+</span></strong>
-        <span>PROVEEDORES</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="about about-teaser">
+  <section class="about">
     <div class="container about-inner">
       <div class="about-text fade-in">
         <span class="section-label">IMPORTADORA DE REPUESTOS</span>
-        <h2>25 Años de trayectoria en el mercado de autopartes</h2>
+        <h2>25 Años de trayectoria<br />en el mercado de autopartes</h2>
         <p>Tenemos para usted una gran variedad de inventarios en autopartes para maquinaria pesada, camiones, tractocamiones y más. Trabajamos con los mejores proveedores a nivel nacional e internacional.</p>
-        <div class="hero-actions">
-          <a href="nosotros.html" class="btn-primary">Conocer más</a>
-          <a href="servicios.html" class="btn-outline btn-outline-dark">Nuestros servicios</a>
-        </div>
+        <p>Nuestros puntos de venta en Bogotá, Medellín y Barranquilla nos permiten llegar a todo el territorio colombiano con despachos ágiles y seguros.</p>
+        <a href="contacto.html" class="btn-primary">Cotiza aquí &nbsp;3143952278</a>
       </div>
-    </div>
-  </section>
-
-  <section class="testimonials">
-    <div class="container">
-      <span class="section-label center fade-in">NUESTROS CLIENTES DICEN</span>
-      <h2 class="section-title fade-in">Testimonios</h2>
-      <div class="testimonials-grid">
-        <div class="testimonial-card fade-in delay-0">
-          <div class="stars">★★★★★</div>
-          <p>"Encontré el repuesto para mi excavadora Komatsu en menos de 24 horas. Excelente servicio y precio justo."</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">JR</div>
-            <div>
-              <strong>Juan Rodríguez</strong>
-              <span>Contratista de construcción — Bogotá</span>
-            </div>
-          </div>
+      <div class="about-cards">
+        <div class="about-card fade-in delay-1">
+          <div class="about-card-icon">🏆</div>
+          <h4>Calidad Garantizada</h4>
+          <p>Repuestos OEM originales e importados con certificación de calidad.</p>
         </div>
-        <div class="testimonial-card fade-in delay-1">
-          <div class="stars">★★★★★</div>
-          <p>"Llevamos 5 años comprando repuestos para nuestra flota de camiones. Siempre tienen stock y el asesoramiento técnico es excelente."</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">ML</div>
-            <div>
-              <strong>María López</strong>
-              <span>Gerente de flota — Medellín</span>
-            </div>
-          </div>
+        <div class="about-card fade-in delay-2">
+          <div class="about-card-icon">🚚</div>
+          <h4>Envíos Nacionales</h4>
+          <p>Despacho a todo Colombia desde nuestros tres puntos de venta.</p>
         </div>
-        <div class="testimonial-card fade-in delay-2">
-          <div class="stars">★★★★★</div>
-          <p>"Los repuestos OEM importados que compré para mi tractor John Deere llegaron perfectos y en el tiempo acordado."</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">CP</div>
-            <div>
-              <strong>Carlos Peña</strong>
-              <span>Agricultor — Barranquilla</span>
-            </div>
-          </div>
+        <div class="about-card fade-in delay-1">
+          <div class="about-card-icon">🔧</div>
+          <h4>Asesoría Técnica</h4>
+          <p>Expertos listos para ayudarte a encontrar el repuesto exacto.</p>
+        </div>
+        <div class="about-card fade-in delay-2">
+          <div class="about-card-icon">💼</div>
+          <h4>Mayor y Detal</h4>
+          <p>Precios especiales para distribuidores, talleres y flotas.</p>
         </div>
       </div>
     </div>
