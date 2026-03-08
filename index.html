@@ -10,6 +10,9 @@
 </head>
 <body>
 
+  <!-- BARRA DE PROGRESO -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
   <!-- TOPBAR -->
   <div class="topbar">
     <div class="container topbar-inner">
@@ -19,12 +22,12 @@
   </div>
 
   <!-- NAVBAR -->
-  <header class="navbar">
+  <header class="navbar" id="navbar">
     <div class="container nav-inner">
-      <div class="logo">
-        <span class="logo-icon">⚙</span>
+      <a href="#inicio" class="logo">
+        <span class="logo-gear">⚙</span>
         IMPORTADORA<span class="logo-accent">REPUESTOS</span>
-      </div>
+      </a>
       <nav>
         <ul class="nav-links" id="nav-links">
           <li><a href="#inicio">Inicio</a></li>
@@ -34,7 +37,7 @@
           <li><a href="#contacto">Contáctenos</a></li>
         </ul>
       </nav>
-      <a href="tel:3143952278" class="btn-nav">📞 3143952278</a>
+      <a href="tel:3143952278" class="btn-nav">📞 314 395 22 78</a>
       <button class="hamburger" id="hamburger" aria-label="Menú">
         <span></span><span></span><span></span>
       </button>
@@ -43,15 +46,28 @@
 
   <!-- HERO -->
   <section class="hero" id="inicio">
-    <div class="hero-overlay"></div>
+    <!-- Partículas decorativas -->
+    <div class="hero-particles" aria-hidden="true">
+      <span class="particle">⚙</span>
+      <span class="particle">🔩</span>
+      <span class="particle">⚙</span>
+      <span class="particle">🔧</span>
+      <span class="particle">⚙</span>
+      <span class="particle">🔩</span>
+    </div>
     <div class="container hero-content">
-      <span class="hero-badge">IMPORTADORA Y MAYORISTA DE REPUESTO</span>
-      <h1>Lo Mejor en<br /><span class="hero-highlight">Autopartes</span></h1>
-      <p>Somos un comercializador de repuestos de vehículo para el mercado colombiano con más de 25 años de experiencia. Contamos con varios puntos de venta y creemos en las personas.</p>
-      <div class="hero-actions">
-        <a href="#contacto" class="btn-primary">Cotiza Aquí</a>
-        <a href="tel:3143952278" class="btn-outline">📞 3143952278</a>
+      <div class="hero-text">
+        <span class="hero-badge reveal-up delay-0">IMPORTADORA Y MAYORISTA DE REPUESTO</span>
+        <h1 class="reveal-up delay-1">Lo Mejor en<br /><span class="hero-highlight">Autopartes</span></h1>
+        <p class="reveal-up delay-2">Somos un comercializador de repuestos de vehículo para el mercado colombiano con más de 25 años de experiencia. Contamos con varios puntos de venta y creemos en las personas.</p>
+        <div class="hero-actions reveal-up delay-3">
+          <a href="#contacto" class="btn-primary">Cotiza Aquí</a>
+          <a href="tel:3143952278" class="btn-outline">📞 3143952278</a>
+        </div>
       </div>
+    </div>
+    <div class="hero-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#fff"/></svg>
     </div>
   </section>
 
@@ -59,19 +75,19 @@
   <section class="stats-bar">
     <div class="container stats-grid">
       <div class="stat-item">
-        <strong>512<span class="stat-plus">+</span></strong>
+        <strong><span class="counter" data-target="512">0</span><span class="stat-plus">+</span></strong>
         <span>MARCAS</span>
       </div>
       <div class="stat-item">
-        <strong>25<span class="stat-plus">+</span></strong>
+        <strong><span class="counter" data-target="25">0</span><span class="stat-plus">+</span></strong>
         <span>AÑOS DE EXPERIENCIA</span>
       </div>
       <div class="stat-item">
-        <strong>1.120<span class="stat-plus">+</span></strong>
+        <strong><span class="counter" data-target="1120">0</span><span class="stat-plus">+</span></strong>
         <span>CLIENTES SATISFECHOS</span>
       </div>
       <div class="stat-item">
-        <strong>1.520<span class="stat-plus">+</span></strong>
+        <strong><span class="counter" data-target="1520">0</span><span class="stat-plus">+</span></strong>
         <span>PROVEEDORES</span>
       </div>
     </div>
@@ -80,30 +96,30 @@
   <!-- NOSOTROS -->
   <section class="about" id="nosotros">
     <div class="container about-inner">
-      <div class="about-text">
+      <div class="about-text fade-in">
         <span class="section-label">IMPORTADORA DE REPUESTOS</span>
         <h2>25 Años de trayectoria<br />en el mercado de autopartes</h2>
-        <p>Tenemos para usted una gran variedad de inventarios en autopartes para maquinaria pesada, camiones, tractocamiones y más. Trabajamos con los mejores proveedores a nivel nacional e internacional para garantizar calidad OEM en cada repuesto.</p>
+        <p>Tenemos para usted una gran variedad de inventarios en autopartes para maquinaria pesada, camiones, tractocamiones y más. Trabajamos con los mejores proveedores a nivel nacional e internacional.</p>
         <p>Nuestros puntos de venta en Bogotá, Medellín y Barranquilla nos permiten llegar a todo el territorio colombiano con despachos ágiles y seguros.</p>
         <a href="#contacto" class="btn-primary">Cotiza aquí &nbsp;3143952278</a>
       </div>
       <div class="about-cards">
-        <div class="about-card">
+        <div class="about-card fade-in delay-1">
           <div class="about-card-icon">🏆</div>
           <h4>Calidad Garantizada</h4>
           <p>Repuestos OEM originales e importados con certificación de calidad.</p>
         </div>
-        <div class="about-card">
+        <div class="about-card fade-in delay-2">
           <div class="about-card-icon">🚚</div>
           <h4>Envíos Nacionales</h4>
           <p>Despacho a todo Colombia desde nuestros tres puntos de venta.</p>
         </div>
-        <div class="about-card">
+        <div class="about-card fade-in delay-1">
           <div class="about-card-icon">🔧</div>
           <h4>Asesoría Técnica</h4>
           <p>Expertos listos para ayudarte a encontrar el repuesto exacto.</p>
         </div>
-        <div class="about-card">
+        <div class="about-card fade-in delay-2">
           <div class="about-card-icon">💼</div>
           <h4>Mayor y Detal</h4>
           <p>Precios especiales para distribuidores, talleres y flotas.</p>
@@ -115,48 +131,48 @@
   <!-- SERVICIOS -->
   <section class="services" id="servicios">
     <div class="container">
-      <span class="section-label center">IMPORTADORA DE REPUESTOS</span>
-      <h2 class="section-title">Nuestros Servicios</h2>
-      <p class="section-sub">Soluciones completas para maquinaria, camiones y vehículos</p>
+      <span class="section-label center fade-in">IMPORTADORA DE REPUESTOS</span>
+      <h2 class="section-title fade-in">Nuestros Servicios</h2>
+      <p class="section-sub fade-in">Soluciones completas para maquinaria, camiones y vehículos</p>
       <div class="services-grid">
 
-        <div class="service-card">
-          <div class="service-icon">🌐</div>
+        <div class="service-card fade-in delay-0">
+          <div class="service-icon-wrap" style="--ic:#3b82f6">🌐</div>
           <h3>Repuestos Importados OEM</h3>
           <p>Importación directa de piezas originales con certificación de fábrica para maquinaria pesada y equipos industriales.</p>
           <a href="https://wa.me/573143952278?text=Hola%21%20Quiero%20cotizar%20*Repuestos%20Importados%20OEM*." target="_blank" class="service-link">Cotizar →</a>
         </div>
 
-        <div class="service-card">
-          <div class="service-icon">🇨🇴</div>
+        <div class="service-card fade-in delay-1">
+          <div class="service-icon-wrap" style="--ic:#22c55e">🇨🇴</div>
           <h3>Repuestos Nacionales OEM</h3>
           <p>Línea nacional de repuestos originales con los mejores distribuidores autorizados del mercado colombiano.</p>
           <a href="https://wa.me/573143952278?text=Hola%21%20Quiero%20cotizar%20*Repuestos%20Nacionales%20OEM*." target="_blank" class="service-link">Cotizar →</a>
         </div>
 
-        <div class="service-card">
-          <div class="service-icon">🚛</div>
+        <div class="service-card fade-in delay-2">
+          <div class="service-icon-wrap" style="--ic:#f59e0b">🚛</div>
           <h3>Camiones y Tractocamiones</h3>
           <p>Repuestos para toda la línea de camiones y tractocamiones: motor, caja, frenos, suspensión y más.</p>
           <a href="https://wa.me/573143952278?text=Hola%21%20Quiero%20cotizar%20*Repuestos%20Camiones%20y%20Tractocamiones*." target="_blank" class="service-link">Cotizar →</a>
         </div>
 
-        <div class="service-card">
-          <div class="service-icon">⚙️</div>
+        <div class="service-card fade-in delay-0">
+          <div class="service-icon-wrap" style="--ic:#e63946">⚙️</div>
           <h3>Repuestos para Motor</h3>
-          <p>Pistones, camisas, culatas, juntas, cigüeñales y todos los componentes para la reparación completa de motores.</p>
+          <p>Pistones, camisas, culatas, juntas, cigüeñales y todos los componentes para reparación completa de motores.</p>
           <a href="https://wa.me/573143952278?text=Hola%21%20Quiero%20cotizar%20*Repuestos%20para%20Motor*." target="_blank" class="service-link">Cotizar →</a>
         </div>
 
-        <div class="service-card">
-          <div class="service-icon">🏗️</div>
+        <div class="service-card fade-in delay-1">
+          <div class="service-icon-wrap" style="--ic:#8b5cf6">🏗️</div>
           <h3>Autocargas</h3>
           <p>Partes y repuestos para equipos de autocarga, grúas y maquinaria de construcción y minería.</p>
           <a href="https://wa.me/573143952278?text=Hola%21%20Quiero%20cotizar%20*Repuestos%20Autocargas*." target="_blank" class="service-link">Cotizar →</a>
         </div>
 
-        <div class="service-card">
-          <div class="service-icon">🌾</div>
+        <div class="service-card fade-in delay-2">
+          <div class="service-icon-wrap" style="--ic:#10b981">🌾</div>
           <h3>Maquinaria Agrícola</h3>
           <p>Repuestos para tractores, cosechadoras y equipos agrícolas de las principales marcas del sector.</p>
           <a href="https://wa.me/573143952278?text=Hola%21%20Quiero%20cotizar%20*Repuestos%20Maquinaria%20Agr%C3%ADcola*." target="_blank" class="service-link">Cotizar →</a>
@@ -169,60 +185,157 @@
   <!-- MARCAS -->
   <section class="brands" id="marcas">
     <div class="container">
-      <span class="section-label center light">VARIEDAD DE INVENTARIOS</span>
-      <h2 class="section-title white">Marcas con las que trabajamos</h2>
-      <p class="section-sub white">Más de 512 marcas nacionales e internacionales disponibles</p>
-      <div class="brands-grid">
-        <div class="brand-tag">CASE-IH</div>
-        <div class="brand-tag">CATERPILLAR</div>
-        <div class="brand-tag">DOOSAN</div>
-        <div class="brand-tag">FLUTECK-KAWASAKI</div>
-        <div class="brand-tag">HITACHI</div>
-        <div class="brand-tag">HYUNDAI</div>
-        <div class="brand-tag">JOHN DEERE</div>
-        <div class="brand-tag">JSC COREANO</div>
-        <div class="brand-tag">KATO</div>
-        <div class="brand-tag">KJC</div>
-        <div class="brand-tag">KOBELCO</div>
-        <div class="brand-tag">KOMATSU</div>
-        <div class="brand-tag">VOLVO</div>
-        <div class="brand-tag">LIEBHERR</div>
-        <div class="brand-tag">CUMMINS</div>
-        <div class="brand-tag">PERKINS</div>
+      <span class="section-label center light fade-in">VARIEDAD DE INVENTARIOS</span>
+      <h2 class="section-title white fade-in">Marcas con las que trabajamos</h2>
+      <p class="section-sub white fade-in">Más de 512 marcas nacionales e internacionales disponibles</p>
+
+      <div class="brands-logo-grid">
+
+        <div class="brand-card fade-in delay-0" style="--bc:#FFCD11;--bt:#000">
+          <div class="brand-logo-img">
+            <img src="https://logo.clearbit.com/cat.com" alt="Caterpillar"
+              onerror="this.parentElement.innerHTML='<span class=\'brand-abbr\'>CAT</span>'">
+          </div>
+          <span class="brand-name">CATERPILLAR</span>
+        </div>
+
+        <div class="brand-card fade-in delay-1" style="--bc:#F37021;--bt:#fff">
+          <div class="brand-logo-img">
+            <img src="https://logo.clearbit.com/komatsu.com" alt="Komatsu"
+              onerror="this.parentElement.innerHTML='<span class=\'brand-abbr\'>KOM</span>'">
+          </div>
+          <span class="brand-name">KOMATSU</span>
+        </div>
+
+        <div class="brand-card fade-in delay-2" style="--bc:#367C2B;--bt:#fff">
+          <div class="brand-logo-img">
+            <img src="https://logo.clearbit.com/deere.com" alt="John Deere"
+              onerror="this.parentElement.innerHTML='<span class=\'brand-abbr\'>JD</span>'">
+          </div>
+          <span class="brand-name">JOHN DEERE</span>
+        </div>
+
+        <div class="brand-card fade-in delay-3" style="--bc:#E4002B;--bt:#fff">
+          <div class="brand-logo-img">
+            <img src="https://logo.clearbit.com/hitachi.com" alt="Hitachi"
+              onerror="this.parentElement.innerHTML='<span class=\'brand-abbr\'>HIT</span>'">
+          </div>
+          <span class="brand-name">HITACHI</span>
+        </div>
+
+        <div class="brand-card fade-in delay-0" style="--bc:#002C5F;--bt:#fff">
+          <div class="brand-logo-img">
+            <img src="https://logo.clearbit.com/hyundai.com" alt="Hyundai"
+              onerror="this.parentElement.innerHTML='<span class=\'brand-abbr\'>HYU</span>'">
+          </div>
+          <span class="brand-name">HYUNDAI</span>
+        </div>
+
+        <div class="brand-card fade-in delay-1" style="--bc:#C41230;--bt:#fff">
+          <div class="brand-logo-img">
+            <img src="https://logo.clearbit.com/caseih.com" alt="Case IH"
+              onerror="this.parentElement.innerHTML='<span class=\'brand-abbr\'>CASE</span>'">
+          </div>
+          <span class="brand-name">CASE-IH</span>
+        </div>
+
+        <div class="brand-card fade-in delay-2" style="--bc:#E8312A;--bt:#fff">
+          <div class="brand-logo-img">
+            <img src="https://logo.clearbit.com/doosan.com" alt="Doosan"
+              onerror="this.parentElement.innerHTML='<span class=\'brand-abbr\'>DOO</span>'">
+          </div>
+          <span class="brand-name">DOOSAN</span>
+        </div>
+
+        <div class="brand-card fade-in delay-3" style="--bc:#0051A5;--bt:#fff">
+          <div class="brand-logo-img">
+            <img src="https://logo.clearbit.com/kobelco.com" alt="Kobelco"
+              onerror="this.parentElement.innerHTML='<span class=\'brand-abbr\'>KBL</span>'">
+          </div>
+          <span class="brand-name">KOBELCO</span>
+        </div>
+
+        <div class="brand-card fade-in delay-0" style="--bc:#003057;--bt:#fff">
+          <div class="brand-logo-img">
+            <img src="https://logo.clearbit.com/volvogroup.com" alt="Volvo"
+              onerror="this.parentElement.innerHTML='<span class=\'brand-abbr\'>VOL</span>'">
+          </div>
+          <span class="brand-name">VOLVO</span>
+        </div>
+
+        <div class="brand-card fade-in delay-1" style="--bc:#1B468D;--bt:#fff">
+          <div class="brand-logo-img">
+            <img src="https://logo.clearbit.com/cummins.com" alt="Cummins"
+              onerror="this.parentElement.innerHTML='<span class=\'brand-abbr\'>CUM</span>'">
+          </div>
+          <span class="brand-name">CUMMINS</span>
+        </div>
+
+        <div class="brand-card fade-in delay-2" style="--bc:#E31837;--bt:#fff">
+          <div class="brand-logo-img">
+            <img src="https://logo.clearbit.com/perkins.com" alt="Perkins"
+              onerror="this.parentElement.innerHTML='<span class=\'brand-abbr\'>PER</span>'">
+          </div>
+          <span class="brand-name">PERKINS</span>
+        </div>
+
+        <div class="brand-card fade-in delay-3" style="--bc:#003087;--bt:#fff">
+          <div class="brand-logo-img">
+            <img src="https://logo.clearbit.com/kawasaki.com" alt="Kawasaki"
+              onerror="this.parentElement.innerHTML='<span class=\'brand-abbr\'>KAW</span>'">
+          </div>
+          <span class="brand-name">KAWASAKI</span>
+        </div>
+
       </div>
+
+      <!-- Marquee de marcas adicionales -->
+      <div class="brands-marquee-wrap fade-in">
+        <div class="brands-marquee">
+          <div class="marquee-track">
+            <span>JSC COREANO</span><span>KATO</span><span>KJC</span><span>LIEBHERR</span>
+            <span>FLUTECK</span><span>MANITOU</span><span>JLG</span><span>TEREX</span>
+            <span>TADANO</span><span>GROVE</span><span>LINK-BELT</span><span>MANITOWOC</span>
+            <span>JSC COREANO</span><span>KATO</span><span>KJC</span><span>LIEBHERR</span>
+            <span>FLUTECK</span><span>MANITOU</span><span>JLG</span><span>TEREX</span>
+            <span>TADANO</span><span>GROVE</span><span>LINK-BELT</span><span>MANITOWOC</span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- UBICACIONES -->
   <section class="locations" id="ubicaciones">
     <div class="container">
-      <span class="section-label center">PUNTOS DE VENTA</span>
-      <h2 class="section-title">Estamos en todo Colombia</h2>
-      <p class="section-sub">Visítanos en cualquiera de nuestras sedes</p>
+      <span class="section-label center fade-in">PUNTOS DE VENTA</span>
+      <h2 class="section-title fade-in">Estamos en todo Colombia</h2>
+      <p class="section-sub fade-in">Visítanos en cualquiera de nuestras sedes</p>
       <div class="locations-grid">
 
-        <div class="location-card">
+        <div class="location-card fade-in delay-0">
           <div class="location-icon">📍</div>
           <h3>Bogotá DC</h3>
           <p>Sede principal — Centro de distribución y atención al cliente.</p>
           <a href="https://wa.me/573143952278?text=Hola%21%20Escribo%20desde%20Bogot%C3%A1." target="_blank" class="location-btn">Contactar sede</a>
         </div>
 
-        <div class="location-card featured-location">
+        <div class="location-card featured-location fade-in delay-1">
           <div class="location-icon">⭐</div>
           <h3>Sede Central</h3>
           <p>Atención personalizada a mayoristas, distribuidores y talleres de todo el país.</p>
           <a href="tel:3143952278" class="location-btn">📞 314 395 22 78</a>
         </div>
 
-        <div class="location-card">
+        <div class="location-card fade-in delay-2">
           <div class="location-icon">📍</div>
           <h3>Medellín</h3>
           <p>Cobertura para Antioquia y la región cafetera.</p>
           <a href="https://wa.me/573143952278?text=Hola%21%20Escribo%20desde%20Medell%C3%ADn." target="_blank" class="location-btn">Contactar sede</a>
         </div>
 
-        <div class="location-card">
+        <div class="location-card fade-in delay-3">
           <div class="location-icon">📍</div>
           <h3>Barranquilla</h3>
           <p>Cobertura para la Costa Atlántica y norte de Colombia.</p>
@@ -236,11 +349,11 @@
   <!-- TESTIMONIOS -->
   <section class="testimonials">
     <div class="container">
-      <span class="section-label center">NUESTROS CLIENTES DICEN</span>
-      <h2 class="section-title">Testimonios</h2>
+      <span class="section-label center fade-in">NUESTROS CLIENTES DICEN</span>
+      <h2 class="section-title fade-in">Testimonios</h2>
       <div class="testimonials-grid">
 
-        <div class="testimonial-card">
+        <div class="testimonial-card fade-in delay-0">
           <div class="stars">★★★★★</div>
           <p>"Encontré el repuesto para mi excavadora Komatsu en menos de 24 horas. Excelente servicio y precio justo."</p>
           <div class="testimonial-author">
@@ -252,7 +365,7 @@
           </div>
         </div>
 
-        <div class="testimonial-card">
+        <div class="testimonial-card fade-in delay-1">
           <div class="stars">★★★★★</div>
           <p>"Llevamos 5 años comprando repuestos para nuestra flota de camiones. Siempre tienen stock y el asesoramiento técnico es excelente."</p>
           <div class="testimonial-author">
@@ -264,7 +377,7 @@
           </div>
         </div>
 
-        <div class="testimonial-card">
+        <div class="testimonial-card fade-in delay-2">
           <div class="stars">★★★★★</div>
           <p>"Los repuestos OEM importados que compré para mi tractor John Deere llegaron perfectos y en el tiempo acordado."</p>
           <div class="testimonial-author">
@@ -283,7 +396,7 @@
   <!-- CONTACTO -->
   <section class="contact" id="contacto">
     <div class="container contact-inner">
-      <div class="contact-info">
+      <div class="contact-info fade-in">
         <span class="section-label light">ESTAMOS PARA AYUDARTE</span>
         <h2>¿Necesitas un repuesto?</h2>
         <p>Cuéntanos qué necesitas y te respondemos con la cotización más competitiva del mercado.</p>
@@ -311,16 +424,31 @@
           </div>
         </div>
       </div>
-      <div class="contact-form-wrap">
+      <div class="contact-form-wrap fade-in delay-2">
         <form class="contact-form" onsubmit="handleSubmit(event)">
           <h3>Cotiza aquí</h3>
           <div class="form-row">
-            <input type="text" placeholder="Tu nombre completo" required />
-            <input type="tel" placeholder="WhatsApp / Teléfono" required />
+            <div class="form-group">
+              <input type="text" id="inp-nombre" placeholder=" " required />
+              <label for="inp-nombre">Tu nombre completo</label>
+            </div>
+            <div class="form-group">
+              <input type="tel" id="inp-tel" placeholder=" " required />
+              <label for="inp-tel">WhatsApp / Teléfono</label>
+            </div>
           </div>
-          <input type="text" placeholder="Marca y modelo del equipo / vehículo" required />
-          <textarea placeholder="Describe el repuesto que necesitas (referencia, marca, cantidad)..." rows="4" required></textarea>
-          <button type="submit" class="btn-primary btn-full">Enviar cotización</button>
+          <div class="form-group">
+            <input type="text" id="inp-equipo" placeholder=" " required />
+            <label for="inp-equipo">Marca y modelo del equipo</label>
+          </div>
+          <div class="form-group">
+            <textarea id="inp-desc" placeholder=" " rows="4" required></textarea>
+            <label for="inp-desc">Describe el repuesto que necesitas</label>
+          </div>
+          <button type="submit" class="btn-primary btn-full">
+            <span>Enviar cotización</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13"/><path d="M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+          </button>
         </form>
         <div id="form-success" class="form-success" style="display:none;">
           ✅ ¡Cotización enviada! Te contactaremos a la brevedad.
@@ -342,7 +470,7 @@
     <div class="container footer-top">
       <div class="footer-col">
         <div class="logo">
-          <span class="logo-icon">⚙</span>
+          <span class="logo-gear">⚙</span>
           IMPORTADORA<span class="logo-accent">REPUESTOS</span>
         </div>
         <p>Importadora y mayorista de repuestos para vehículos y maquinaria pesada en Colombia. Más de 25 años de trayectoria.</p>
@@ -389,21 +517,69 @@
   </footer>
 
   <script>
+    /* ---- Scroll progress bar ---- */
+    const bar = document.getElementById('scrollProgress');
+    window.addEventListener('scroll', () => {
+      const pct = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+      bar.style.width = pct + '%';
+    }, { passive: true });
+
+    /* ---- Navbar scroll effect ---- */
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    }, { passive: true });
+
+    /* ---- Intersection Observer para fade-in y counters ---- */
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+
+        if (el.classList.contains('fade-in')) {
+          el.classList.add('visible');
+        }
+        if (el.classList.contains('reveal-up')) {
+          el.classList.add('visible');
+        }
+
+        // Counter animation
+        if (el.classList.contains('counter') && !el.dataset.done) {
+          el.dataset.done = '1';
+          const target = +el.dataset.target;
+          const duration = 1800;
+          const step = target / (duration / 16);
+          let current = 0;
+          const tick = () => {
+            current = Math.min(current + step, target);
+            el.textContent = Math.floor(current).toLocaleString('es-CO');
+            if (current < target) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+        }
+
+        io.unobserve(el);
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.fade-in, .reveal-up, .counter').forEach(el => io.observe(el));
+
+    /* ---- Formulario → WhatsApp ---- */
     function handleSubmit(e) {
       e.preventDefault();
-      const form = e.target;
-      const nombre = form.querySelector('input[type="text"]').value;
-      const telefono = form.querySelector('input[type="tel"]').value;
-      const equipo = form.querySelectorAll('input[type="text"]')[1].value;
-      const descripcion = form.querySelector('textarea').value;
+      const nombre   = document.getElementById('inp-nombre').value;
+      const telefono = document.getElementById('inp-tel').value;
+      const equipo   = document.getElementById('inp-equipo').value;
+      const desc     = document.getElementById('inp-desc').value;
       const msg = encodeURIComponent(
-        `Hola! Me llamo *${nombre}* (${telefono}).\nEquipo: *${equipo}*\nNecesito: ${descripcion}`
+        `Hola! Me llamo *${nombre}* (${telefono}).\nEquipo: *${equipo}*\nNecesito: ${desc}`
       );
       window.open(`https://wa.me/573143952278?text=${msg}`, '_blank');
-      form.style.display = 'none';
+      e.target.style.display = 'none';
       document.getElementById('form-success').style.display = 'block';
     }
 
+    /* ---- Smooth scroll ---- */
     document.querySelectorAll('a[href^="#"]').forEach(a => {
       a.addEventListener('click', e => {
         const target = document.querySelector(a.getAttribute('href'));
@@ -415,33 +591,18 @@
       });
     });
 
+    /* ---- Hamburguesa ---- */
     const hamburger = document.getElementById('hamburger');
     const nav = document.getElementById('nav-links');
-
     hamburger.addEventListener('click', () => {
       hamburger.classList.toggle('open');
       nav.classList.toggle('open');
     });
-
     document.addEventListener('click', e => {
       if (!hamburger.contains(e.target) && !nav.contains(e.target)) {
         hamburger.classList.remove('open');
         nav.classList.remove('open');
       }
-    });
-
-    // Animación al hacer scroll
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.service-card, .about-card, .location-card, .testimonial-card, .stat-item').forEach(el => {
-      el.classList.add('animate-on-scroll');
-      observer.observe(el);
     });
   </script>
 
