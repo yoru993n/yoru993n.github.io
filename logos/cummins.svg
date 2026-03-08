@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 60" width="120" height="60">
+  <rect width="120" height="60" fill="#1B468D"/>
+  <!-- Forma de C estilizada -->
+  <path d="M26,16 A16,16 0 1,0 26,44" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="4" stroke-linecap="round"/>
+  <!-- CUMMINS -->
+  <text x="76" y="28" font-family="Arial Black, sans-serif" font-size="12" font-weight="900"
+    fill="#fff" text-anchor="middle" letter-spacing="0.5">CUMMINS</text>
+  <rect x="46" y="33" width="60" height="2" rx="1" fill="rgba(255,255,255,0.25)"/>
+  <text x="76" y="45" font-family="Arial, sans-serif" font-size="7.5" font-weight="600"
+    fill="rgba(255,255,255,0.5)" text-anchor="middle" letter-spacing="1">POWER ENGINES</text>
+</svg>

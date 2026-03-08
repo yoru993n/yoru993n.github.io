@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 60" width="120" height="60">
+  <rect width="120" height="60" fill="#003057"/>
+  <!-- Círculo icónico Volvo -->
+  <circle cx="22" cy="30" r="16" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="2"/>
+  <!-- Flecha diagonal (símbolo masculino/Volvo) -->
+  <line x1="32" y1="20" x2="38" y2="14" stroke="rgba(255,255,255,0.7)" stroke-width="2" stroke-linecap="round"/>
+  <polyline points="33,14 38,14 38,19" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- VOLVO texto -->
+  <text x="76" y="34" font-family="Arial Black, sans-serif" font-size="16" font-weight="900"
+    fill="#fff" text-anchor="middle" letter-spacing="2">VOLVO</text>
+  <rect x="48" y="40" width="56" height="2" rx="1" fill="rgba(255,255,255,0.2)"/>
+</svg>
