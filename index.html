@@ -3,28 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AutoRepuestos Premium</title>
+  <title>Importadora Repuestos — Autopartes y Maquinaria</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 </head>
 <body>
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>📞 Hacer una llamada: <strong>314 395 22 78</strong></span>
+      <a href="https://wa.me/573143952278?text=Hola%21%20Quiero%20cotizar%20un%20repuesto." target="_blank" class="topbar-wsp">💬 Cotiza por WhatsApp</a>
+    </div>
+  </div>
 
   <!-- NAVBAR -->
   <header class="navbar">
     <div class="container nav-inner">
       <div class="logo">
-        <span class="logo-icon">&#9881;</span>
-        AutoRepuestos<span class="logo-accent">Premium</span>
+        <span class="logo-icon">⚙</span>
+        IMPORTADORA<span class="logo-accent">REPUESTOS</span>
       </div>
       <nav>
         <ul class="nav-links" id="nav-links">
-          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
           <li><a href="#marcas">Marcas</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#contacto">Contáctenos</a></li>
         </ul>
       </nav>
-      <a href="#contacto" class="btn-nav">Cotizar ahora</a>
+      <a href="tel:3143952278" class="btn-nav">📞 3143952278</a>
       <button class="hamburger" id="hamburger" aria-label="Menú">
         <span></span><span></span><span></span>
       </button>
@@ -32,129 +42,124 @@
   </header>
 
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero" id="inicio">
+    <div class="hero-overlay"></div>
     <div class="container hero-content">
-      <span class="hero-badge">✔ Envíos a todo el país</span>
-      <h1>Repuestos de calidad<br /><span class="hero-highlight">para tu vehículo</span></h1>
-      <p>Encontrá las mejores piezas originales y alternativas para todas las marcas. Stock permanente, precios competitivos y entrega rápida.</p>
+      <span class="hero-badge">IMPORTADORA Y MAYORISTA DE REPUESTO</span>
+      <h1>Lo Mejor en<br /><span class="hero-highlight">Autopartes</span></h1>
+      <p>Somos un comercializador de repuestos de vehículo para el mercado colombiano con más de 25 años de experiencia. Contamos con varios puntos de venta y creemos en las personas.</p>
       <div class="hero-actions">
-        <a href="#catalogo" class="btn-primary">Ver catálogo</a>
-        <a href="#contacto" class="btn-outline">Consultar pieza</a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat"><strong>+5.000</strong><span>productos</span></div>
-        <div class="stat"><strong>+800</strong><span>clientes</span></div>
-        <div class="stat"><strong>15 años</strong><span>de experiencia</span></div>
+        <a href="#contacto" class="btn-primary">Cotiza Aquí</a>
+        <a href="tel:3143952278" class="btn-outline">📞 3143952278</a>
       </div>
     </div>
   </section>
 
-  <!-- CATEGORÍAS -->
-  <section class="categories" id="catalogo">
-    <div class="container">
-      <h2 class="section-title">Nuestro Catálogo</h2>
-      <p class="section-sub">Repuestos para las principales marcas del mercado</p>
-      <div class="cat-grid">
-        <div class="cat-card">
-          <div class="cat-icon">🔧</div>
-          <h3>Motor y transmisión</h3>
-          <p>Pistones, juntas, embragues, cajas de cambio y más.</p>
-          <a href="https://wa.me/573011959854?text=Hola%21%20Necesito%20un%20repuesto%20de%20*Motor%20y%20transmisi%C3%B3n*.%20%C2%BFMe%20pueden%20ayudar%3F" target="_blank" class="cat-link">💬 Consultar →</a>
+  <!-- STATS BAR -->
+  <section class="stats-bar">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <strong>512<span class="stat-plus">+</span></strong>
+        <span>MARCAS</span>
+      </div>
+      <div class="stat-item">
+        <strong>25<span class="stat-plus">+</span></strong>
+        <span>AÑOS DE EXPERIENCIA</span>
+      </div>
+      <div class="stat-item">
+        <strong>1.120<span class="stat-plus">+</span></strong>
+        <span>CLIENTES SATISFECHOS</span>
+      </div>
+      <div class="stat-item">
+        <strong>1.520<span class="stat-plus">+</span></strong>
+        <span>PROVEEDORES</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section class="about" id="nosotros">
+    <div class="container about-inner">
+      <div class="about-text">
+        <span class="section-label">IMPORTADORA DE REPUESTOS</span>
+        <h2>25 Años de trayectoria<br />en el mercado de autopartes</h2>
+        <p>Tenemos para usted una gran variedad de inventarios en autopartes para maquinaria pesada, camiones, tractocamiones y más. Trabajamos con los mejores proveedores a nivel nacional e internacional para garantizar calidad OEM en cada repuesto.</p>
+        <p>Nuestros puntos de venta en Bogotá, Medellín y Barranquilla nos permiten llegar a todo el territorio colombiano con despachos ágiles y seguros.</p>
+        <a href="#contacto" class="btn-primary">Cotiza aquí &nbsp;3143952278</a>
+      </div>
+      <div class="about-cards">
+        <div class="about-card">
+          <div class="about-card-icon">🏆</div>
+          <h4>Calidad Garantizada</h4>
+          <p>Repuestos OEM originales e importados con certificación de calidad.</p>
         </div>
-        <div class="cat-card">
-          <div class="cat-icon">⚡</div>
-          <h3>Sistema eléctrico</h3>
-          <p>Baterías, alternadores, sensores, fusibles y conectores.</p>
-          <a href="https://wa.me/573011959854?text=Hola%21%20Necesito%20un%20repuesto%20del%20*Sistema%20el%C3%A9ctrico*.%20%C2%BFMe%20pueden%20ayudar%3F" target="_blank" class="cat-link">💬 Consultar →</a>
+        <div class="about-card">
+          <div class="about-card-icon">🚚</div>
+          <h4>Envíos Nacionales</h4>
+          <p>Despacho a todo Colombia desde nuestros tres puntos de venta.</p>
         </div>
-        <div class="cat-card">
-          <div class="cat-icon">🛞</div>
-          <h3>Frenos y suspensión</h3>
-          <p>Pastillas, discos, amortiguadores, rótulas y bujes.</p>
-          <a href="https://wa.me/573011959854?text=Hola%21%20Necesito%20un%20repuesto%20de%20*Frenos%20y%20suspensi%C3%B3n*.%20%C2%BFMe%20pueden%20ayudar%3F" target="_blank" class="cat-link">💬 Consultar →</a>
+        <div class="about-card">
+          <div class="about-card-icon">🔧</div>
+          <h4>Asesoría Técnica</h4>
+          <p>Expertos listos para ayudarte a encontrar el repuesto exacto.</p>
         </div>
-        <div class="cat-card">
-          <div class="cat-icon">💧</div>
-          <h3>Filtros y fluidos</h3>
-          <p>Filtros de aceite, aire, combustible y refrigerante.</p>
-          <a href="https://wa.me/573011959854?text=Hola%21%20Necesito%20un%20repuesto%20de%20*Filtros%20y%20fluidos*.%20%C2%BFMe%20pueden%20ayudar%3F" target="_blank" class="cat-link">💬 Consultar →</a>
-        </div>
-        <div class="cat-card">
-          <div class="cat-icon">💡</div>
-          <h3>Iluminación</h3>
-          <p>Faros, luces LED, lámparas y accesorios de iluminación.</p>
-          <a href="https://wa.me/573011959854?text=Hola%21%20Necesito%20un%20repuesto%20de%20*Iluminaci%C3%B3n*.%20%C2%BFMe%20pueden%20ayudar%3F" target="_blank" class="cat-link">💬 Consultar →</a>
-        </div>
-        <div class="cat-card">
-          <div class="cat-icon">🚗</div>
-          <h3>Carrocería</h3>
-          <p>Paragolpes, espejos, puertas, vidrios y molduras.</p>
-          <a href="https://wa.me/573011959854?text=Hola%21%20Necesito%20un%20repuesto%20de%20*Carrocer%C3%ADa*.%20%C2%BFMe%20pueden%20ayudar%3F" target="_blank" class="cat-link">💬 Consultar →</a>
+        <div class="about-card">
+          <div class="about-card-icon">💼</div>
+          <h4>Mayor y Detal</h4>
+          <p>Precios especiales para distribuidores, talleres y flotas.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PRODUCTOS DESTACADOS -->
-  <section class="products">
+  <!-- SERVICIOS -->
+  <section class="services" id="servicios">
     <div class="container">
-      <h2 class="section-title">Productos destacados</h2>
-      <p class="section-sub">Los más consultados esta semana</p>
-      <div class="prod-grid">
+      <span class="section-label center">IMPORTADORA DE REPUESTOS</span>
+      <h2 class="section-title">Nuestros Servicios</h2>
+      <p class="section-sub">Soluciones completas para maquinaria, camiones y vehículos</p>
+      <div class="services-grid">
 
-        <div class="prod-card">
-          <div class="prod-badge">Más vendido</div>
-          <div class="prod-img">🔩</div>
-          <div class="prod-info">
-            <span class="prod-cat">Motor</span>
-            <h4>Kit de distribución universal</h4>
-            <p>Compatible con Toyota, Volkswagen, Ford. Incluye correa, tensor y bomba de agua.</p>
-            <div class="prod-footer">
-              <span class="prod-price">$48.500</span>
-              <a href="https://wa.me/573011959854?text=Hola%21%20Me%20interesa%20el%20*Kit%20de%20distribuci%C3%B3n%20universal*%20%28%2448.500%29.%20%C2%BFTiene%20stock%3F" target="_blank" class="btn-small btn-wsp">💬 Consultar</a>
-            </div>
-          </div>
+        <div class="service-card">
+          <div class="service-icon">🌐</div>
+          <h3>Repuestos Importados OEM</h3>
+          <p>Importación directa de piezas originales con certificación de fábrica para maquinaria pesada y equipos industriales.</p>
+          <a href="https://wa.me/573143952278?text=Hola%21%20Quiero%20cotizar%20*Repuestos%20Importados%20OEM*." target="_blank" class="service-link">Cotizar →</a>
         </div>
 
-        <div class="prod-card">
-          <div class="prod-badge badge-blue">Oferta</div>
-          <div class="prod-img">🛑</div>
-          <div class="prod-info">
-            <span class="prod-cat">Frenos</span>
-            <h4>Pastillas de freno delanteras</h4>
-            <p>Juego completo para eje delantero. Alta resistencia al calor. Varias aplicaciones.</p>
-            <div class="prod-footer">
-              <span class="prod-price">$12.900</span>
-              <a href="https://wa.me/573011959854?text=Hola%21%20Me%20interesan%20las%20*Pastillas%20de%20freno%20delanteras*%20%28%2412.900%29.%20%C2%BFTiene%20stock%3F" target="_blank" class="btn-small btn-wsp">💬 Consultar</a>
-            </div>
-          </div>
+        <div class="service-card">
+          <div class="service-icon">🇨🇴</div>
+          <h3>Repuestos Nacionales OEM</h3>
+          <p>Línea nacional de repuestos originales con los mejores distribuidores autorizados del mercado colombiano.</p>
+          <a href="https://wa.me/573143952278?text=Hola%21%20Quiero%20cotizar%20*Repuestos%20Nacionales%20OEM*." target="_blank" class="service-link">Cotizar →</a>
         </div>
 
-        <div class="prod-card">
-          <div class="prod-img">🔋</div>
-          <div class="prod-info">
-            <span class="prod-cat">Eléctrico</span>
-            <h4>Batería 12V 65Ah libre mantenimiento</h4>
-            <p>Garantía 18 meses. Apta para autos, camionetas y SUV. Tecnología AGM.</p>
-            <div class="prod-footer">
-              <span class="prod-price">$89.000</span>
-              <a href="https://wa.me/573011959854?text=Hola%21%20Me%20interesa%20la%20*Bater%C3%ADa%2012V%2065Ah*%20%28%2489.000%29.%20%C2%BFTiene%20stock%3F" target="_blank" class="btn-small btn-wsp">💬 Consultar</a>
-            </div>
-          </div>
+        <div class="service-card">
+          <div class="service-icon">🚛</div>
+          <h3>Camiones y Tractocamiones</h3>
+          <p>Repuestos para toda la línea de camiones y tractocamiones: motor, caja, frenos, suspensión y más.</p>
+          <a href="https://wa.me/573143952278?text=Hola%21%20Quiero%20cotizar%20*Repuestos%20Camiones%20y%20Tractocamiones*." target="_blank" class="service-link">Cotizar →</a>
         </div>
 
-        <div class="prod-card">
-          <div class="prod-badge badge-green">Nuevo</div>
-          <div class="prod-img">💨</div>
-          <div class="prod-info">
-            <span class="prod-cat">Filtros</span>
-            <h4>Filtro de aire de alto flujo</h4>
-            <p>Mejora rendimiento y consumo. Compatible con la mayoría de vehículos 2010–2024.</p>
-            <div class="prod-footer">
-              <span class="prod-price">$8.200</span>
-              <a href="https://wa.me/573011959854?text=Hola%21%20Me%20interesa%20el%20*Filtro%20de%20aire%20de%20alto%20flujo*%20%28%248.200%29.%20%C2%BFTiene%20stock%3F" target="_blank" class="btn-small btn-wsp">💬 Consultar</a>
-            </div>
-          </div>
+        <div class="service-card">
+          <div class="service-icon">⚙️</div>
+          <h3>Repuestos para Motor</h3>
+          <p>Pistones, camisas, culatas, juntas, cigüeñales y todos los componentes para la reparación completa de motores.</p>
+          <a href="https://wa.me/573143952278?text=Hola%21%20Quiero%20cotizar%20*Repuestos%20para%20Motor*." target="_blank" class="service-link">Cotizar →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🏗️</div>
+          <h3>Autocargas</h3>
+          <p>Partes y repuestos para equipos de autocarga, grúas y maquinaria de construcción y minería.</p>
+          <a href="https://wa.me/573143952278?text=Hola%21%20Quiero%20cotizar%20*Repuestos%20Autocargas*." target="_blank" class="service-link">Cotizar →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🌾</div>
+          <h3>Maquinaria Agrícola</h3>
+          <p>Repuestos para tractores, cosechadoras y equipos agrícolas de las principales marcas del sector.</p>
+          <a href="https://wa.me/573143952278?text=Hola%21%20Quiero%20cotizar%20*Repuestos%20Maquinaria%20Agr%C3%ADcola*." target="_blank" class="service-link">Cotizar →</a>
         </div>
 
       </div>
@@ -164,109 +169,252 @@
   <!-- MARCAS -->
   <section class="brands" id="marcas">
     <div class="container">
-      <h2 class="section-title">Marcas con las que trabajamos</h2>
-      <div class="brands-list">
-        <span>Toyota</span>
-        <span>Volkswagen</span>
-        <span>Ford</span>
-        <span>Chevrolet</span>
-        <span>Fiat</span>
-        <span>Renault</span>
-        <span>Honda</span>
-        <span>Peugeot</span>
+      <span class="section-label center light">VARIEDAD DE INVENTARIOS</span>
+      <h2 class="section-title white">Marcas con las que trabajamos</h2>
+      <p class="section-sub white">Más de 512 marcas nacionales e internacionales disponibles</p>
+      <div class="brands-grid">
+        <div class="brand-tag">CASE-IH</div>
+        <div class="brand-tag">CATERPILLAR</div>
+        <div class="brand-tag">DOOSAN</div>
+        <div class="brand-tag">FLUTECK-KAWASAKI</div>
+        <div class="brand-tag">HITACHI</div>
+        <div class="brand-tag">HYUNDAI</div>
+        <div class="brand-tag">JOHN DEERE</div>
+        <div class="brand-tag">JSC COREANO</div>
+        <div class="brand-tag">KATO</div>
+        <div class="brand-tag">KJC</div>
+        <div class="brand-tag">KOBELCO</div>
+        <div class="brand-tag">KOMATSU</div>
+        <div class="brand-tag">VOLVO</div>
+        <div class="brand-tag">LIEBHERR</div>
+        <div class="brand-tag">CUMMINS</div>
+        <div class="brand-tag">PERKINS</div>
       </div>
     </div>
   </section>
 
-  <!-- BENEFICIOS -->
-  <section class="benefits">
-    <div class="container benefits-grid">
-      <div class="benefit-item">
-        <div class="benefit-icon">🚚</div>
-        <h4>Envío rápido</h4>
-        <p>Despacho en 24–48 hs. a todo el país con seguimiento en tiempo real.</p>
+  <!-- UBICACIONES -->
+  <section class="locations" id="ubicaciones">
+    <div class="container">
+      <span class="section-label center">PUNTOS DE VENTA</span>
+      <h2 class="section-title">Estamos en todo Colombia</h2>
+      <p class="section-sub">Visítanos en cualquiera de nuestras sedes</p>
+      <div class="locations-grid">
+
+        <div class="location-card">
+          <div class="location-icon">📍</div>
+          <h3>Bogotá DC</h3>
+          <p>Sede principal — Centro de distribución y atención al cliente.</p>
+          <a href="https://wa.me/573143952278?text=Hola%21%20Escribo%20desde%20Bogot%C3%A1." target="_blank" class="location-btn">Contactar sede</a>
+        </div>
+
+        <div class="location-card featured-location">
+          <div class="location-icon">⭐</div>
+          <h3>Sede Central</h3>
+          <p>Atención personalizada a mayoristas, distribuidores y talleres de todo el país.</p>
+          <a href="tel:3143952278" class="location-btn">📞 314 395 22 78</a>
+        </div>
+
+        <div class="location-card">
+          <div class="location-icon">📍</div>
+          <h3>Medellín</h3>
+          <p>Cobertura para Antioquia y la región cafetera.</p>
+          <a href="https://wa.me/573143952278?text=Hola%21%20Escribo%20desde%20Medell%C3%ADn." target="_blank" class="location-btn">Contactar sede</a>
+        </div>
+
+        <div class="location-card">
+          <div class="location-icon">📍</div>
+          <h3>Barranquilla</h3>
+          <p>Cobertura para la Costa Atlántica y norte de Colombia.</p>
+          <a href="https://wa.me/573143952278?text=Hola%21%20Escribo%20desde%20Barranquilla." target="_blank" class="location-btn">Contactar sede</a>
+        </div>
+
       </div>
-      <div class="benefit-item">
-        <div class="benefit-icon">✅</div>
-        <h4>Garantía de calidad</h4>
-        <p>Todos nuestros productos tienen garantía y certificación de origen.</p>
-      </div>
-      <div class="benefit-item">
-        <div class="benefit-icon">💬</div>
-        <h4>Asesoramiento técnico</h4>
-        <p>Nuestro equipo te ayuda a encontrar la pieza correcta para tu vehículo.</p>
-      </div>
-      <div class="benefit-item">
-        <div class="benefit-icon">💳</div>
-        <h4>Múltiples medios de pago</h4>
-        <p>Efectivo, transferencia, tarjetas de crédito y débito en cuotas.</p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="testimonials">
+    <div class="container">
+      <span class="section-label center">NUESTROS CLIENTES DICEN</span>
+      <h2 class="section-title">Testimonios</h2>
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Encontré el repuesto para mi excavadora Komatsu en menos de 24 horas. Excelente servicio y precio justo."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">JR</div>
+            <div>
+              <strong>Juan Rodríguez</strong>
+              <span>Contratista de construcción — Bogotá</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Llevamos 5 años comprando repuestos para nuestra flota de camiones. Siempre tienen stock y el asesoramiento técnico es excelente."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">ML</div>
+            <div>
+              <strong>María López</strong>
+              <span>Gerente de flota — Medellín</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Los repuestos OEM importados que compré para mi tractor John Deere llegaron perfectos y en el tiempo acordado."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">CP</div>
+            <div>
+              <strong>Carlos Peña</strong>
+              <span>Agricultor — Barranquilla</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
   <!-- CONTACTO -->
   <section class="contact" id="contacto">
-    <div class="container">
-      <h2 class="section-title white">¿No encontrás lo que buscás?</h2>
-      <p class="section-sub white">Envianos tu consulta y te respondemos a la brevedad</p>
-      <form class="contact-form" onsubmit="handleSubmit(event)">
-        <div class="form-row">
-          <input type="text" placeholder="Tu nombre" required />
-          <input type="tel" placeholder="WhatsApp / Teléfono" required />
+    <div class="container contact-inner">
+      <div class="contact-info">
+        <span class="section-label light">ESTAMOS PARA AYUDARTE</span>
+        <h2>¿Necesitas un repuesto?</h2>
+        <p>Cuéntanos qué necesitas y te respondemos con la cotización más competitiva del mercado.</p>
+        <div class="contact-details">
+          <div class="contact-detail-item">
+            <span class="contact-detail-icon">📞</span>
+            <div>
+              <strong>Teléfono / WhatsApp</strong>
+              <span>314 395 22 78</span>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <span class="contact-detail-icon">📍</span>
+            <div>
+              <strong>Sedes</strong>
+              <span>Bogotá · Medellín · Barranquilla</span>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <span class="contact-detail-icon">🕐</span>
+            <div>
+              <strong>Horario</strong>
+              <span>Lun – Sáb: 7:00 am – 6:00 pm</span>
+            </div>
+          </div>
         </div>
-        <input type="text" placeholder="Marca y modelo de tu vehículo" required />
-        <textarea placeholder="Describí el repuesto que necesitás..." rows="4" required></textarea>
-        <button type="submit" class="btn-primary btn-full">Enviar consulta</button>
-      </form>
-      <div id="form-success" class="form-success" style="display:none;">
-        ✅ ¡Consulta enviada! Te contactaremos pronto.
+      </div>
+      <div class="contact-form-wrap">
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <h3>Cotiza aquí</h3>
+          <div class="form-row">
+            <input type="text" placeholder="Tu nombre completo" required />
+            <input type="tel" placeholder="WhatsApp / Teléfono" required />
+          </div>
+          <input type="text" placeholder="Marca y modelo del equipo / vehículo" required />
+          <textarea placeholder="Describe el repuesto que necesitas (referencia, marca, cantidad)..." rows="4" required></textarea>
+          <button type="submit" class="btn-primary btn-full">Enviar cotización</button>
+        </form>
+        <div id="form-success" class="form-success" style="display:none;">
+          ✅ ¡Cotización enviada! Te contactaremos a la brevedad.
+        </div>
       </div>
     </div>
   </section>
 
   <!-- BOTÓN FLOTANTE WHATSAPP -->
-  <a href="https://wa.me/573228668209?text=Hola%21%20Visité%20su%20página%20y%20me%20gustaría%20consultar%20por%20un%20repuesto." target="_blank" class="wsp-float" aria-label="Contactar por WhatsApp">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="white" width="32" height="32">
+  <a href="https://wa.me/573143952278?text=Hola%21%20Visité%20su%20página%20y%20quiero%20cotizar%20un%20repuesto." target="_blank" class="wsp-float" aria-label="Contactar por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="white" width="30" height="30">
       <path d="M16 0C7.163 0 0 7.163 0 16c0 2.833.738 5.488 2.027 7.793L0 32l8.418-2.004A15.93 15.93 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 0 1-6.772-1.853l-.486-.29-5.002 1.191 1.215-4.87-.317-.5A13.267 13.267 0 0 1 2.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.27-9.862c-.398-.199-2.354-1.162-2.719-1.294-.365-.133-.631-.199-.897.199s-1.029 1.294-1.261 1.56c-.232.266-.465.299-.863.1-.398-.199-1.681-.62-3.202-1.977-1.183-1.056-1.982-2.361-2.214-2.759-.232-.398-.025-.613.174-.811.179-.178.398-.465.597-.698.199-.232.266-.398.398-.664.133-.266.066-.498-.033-.697-.1-.199-.897-2.163-1.229-2.96-.324-.778-.653-.673-.897-.686l-.764-.013c-.266 0-.697.1-1.063.498s-1.394 1.362-1.394 3.32 1.427 3.85 1.626 4.116c.199.266 2.808 4.288 6.806 6.015.951.41 1.693.655 2.271.839.954.303 1.823.26 2.509.158.765-.114 2.354-.963 2.686-1.892.332-.929.332-1.726.232-1.892-.099-.166-.365-.266-.763-.465z"/>
     </svg>
-    <span class="wsp-tooltip">¡Chateá con nosotros!</span>
+    <span class="wsp-tooltip">¡Cotiza ahora!</span>
   </a>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container footer-inner">
-      <div class="logo">
-        <span class="logo-icon">&#9881;</span>
-        AutoRepuestos<span class="logo-accent">Premium</span>
+    <div class="container footer-top">
+      <div class="footer-col">
+        <div class="logo">
+          <span class="logo-icon">⚙</span>
+          IMPORTADORA<span class="logo-accent">REPUESTOS</span>
+        </div>
+        <p>Importadora y mayorista de repuestos para vehículos y maquinaria pesada en Colombia. Más de 25 años de trayectoria.</p>
       </div>
-      <p>© 2026 AutoRepuestos Premium. Todos los derechos reservados.</p>
-      <div class="footer-links">
-        <a href="https://wa.me/573011959854" target="_blank">📱 WhatsApp</a>
-        <a href="mailto:ventas@autorepuestos.com">✉ Email</a>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#marcas">Marcas</a></li>
+          <li><a href="#contacto">Contáctenos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#servicios">Repuestos Importados OEM</a></li>
+          <li><a href="#servicios">Repuestos Nacionales OEM</a></li>
+          <li><a href="#servicios">Camiones y Tractocamiones</a></li>
+          <li><a href="#servicios">Maquinaria Agrícola</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li>📞 <a href="tel:3143952278">314 395 22 78</a></li>
+          <li>📍 Bogotá DC</li>
+          <li>📍 Medellín</li>
+          <li>📍 Barranquilla</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 Importadora Repuestos. Todos los derechos reservados.</p>
+        <div class="footer-social">
+          <a href="https://wa.me/573143952278" target="_blank" aria-label="WhatsApp">
+            <svg viewBox="0 0 32 32" fill="currentColor" width="20" height="20"><path d="M16 0C7.163 0 0 7.163 0 16c0 2.833.738 5.488 2.027 7.793L0 32l8.418-2.004A15.93 15.93 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 0 1-6.772-1.853l-.486-.29-5.002 1.191 1.215-4.87-.317-.5A13.267 13.267 0 0 1 2.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.27-9.862c-.398-.199-2.354-1.162-2.719-1.294-.365-.133-.631-.199-.897.199s-1.029 1.294-1.261 1.56c-.232.266-.465.299-.863.1-.398-.199-1.681-.62-3.202-1.977-1.183-1.056-1.982-2.361-2.214-2.759-.232-.398-.025-.613.174-.811.179-.178.398-.465.597-.698.199-.232.266-.398.398-.664.133-.266.066-.498-.033-.697-.1-.199-.897-2.163-1.229-2.96-.324-.778-.653-.673-.897-.686l-.764-.013c-.266 0-.697.1-1.063.498s-1.394 1.362-1.394 3.32 1.427 3.85 1.626 4.116c.199.266 2.808 4.288 6.806 6.015.951.41 1.693.655 2.271.839.954.303 1.823.26 2.509.158.765-.114 2.354-.963 2.686-1.892.332-.929.332-1.726.232-1.892-.099-.166-.365-.266-.763-.465z"/></svg>
+          </a>
+        </div>
       </div>
     </div>
   </footer>
 
   <script>
-    // Formulario
     function handleSubmit(e) {
       e.preventDefault();
-      document.querySelector('.contact-form').style.display = 'none';
+      const form = e.target;
+      const nombre = form.querySelector('input[type="text"]').value;
+      const telefono = form.querySelector('input[type="tel"]').value;
+      const equipo = form.querySelectorAll('input[type="text"]')[1].value;
+      const descripcion = form.querySelector('textarea').value;
+      const msg = encodeURIComponent(
+        `Hola! Me llamo *${nombre}* (${telefono}).\nEquipo: *${equipo}*\nNecesito: ${descripcion}`
+      );
+      window.open(`https://wa.me/573143952278?text=${msg}`, '_blank');
+      form.style.display = 'none';
       document.getElementById('form-success').style.display = 'block';
     }
 
-    // Smooth scroll
     document.querySelectorAll('a[href^="#"]').forEach(a => {
       a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (!target) return;
         e.preventDefault();
-        document.querySelector(a.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-        // Cerrar menú si está abierto
+        target.scrollIntoView({ behavior: 'smooth' });
         nav.classList.remove('open');
         hamburger.classList.remove('open');
       });
     });
 
-    // Menú hamburguesa
     const hamburger = document.getElementById('hamburger');
     const nav = document.getElementById('nav-links');
 
@@ -275,12 +423,25 @@
       nav.classList.toggle('open');
     });
 
-    // Cerrar menú al hacer clic fuera
     document.addEventListener('click', e => {
       if (!hamburger.contains(e.target) && !nav.contains(e.target)) {
         hamburger.classList.remove('open');
         nav.classList.remove('open');
       }
+    });
+
+    // Animación al hacer scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.service-card, .about-card, .location-card, .testimonial-card, .stat-item').forEach(el => {
+      el.classList.add('animate-on-scroll');
+      observer.observe(el);
     });
   </script>
 
