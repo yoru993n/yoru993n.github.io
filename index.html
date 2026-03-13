@@ -8,12 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 </head>
-<body>
+<body class="page-inicio">
 
-  <!-- BARRA DE PROGRESO -->
   <div class="scroll-progress" id="scrollProgress"></div>
 
-  <!-- TOPBAR -->
   <div class="topbar">
     <div class="container topbar-inner">
       <span>📞 Hacer una llamada: <strong>314 395 22 78</strong></span>
@@ -21,20 +19,20 @@
     </div>
   </div>
 
-  <!-- NAVBAR -->
   <header class="navbar" id="navbar">
     <div class="container nav-inner">
-      <a href="#inicio" class="logo">
+      <a href="index.html" class="logo">
         <span class="logo-gear">⚙</span>
         IMPORTADORA<span class="logo-accent">REPUESTOS</span>
       </a>
       <nav>
         <ul class="nav-links" id="nav-links">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#marcas">Marcas</a></li>
-          <li><a href="#contacto">Contáctenos</a></li>
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="marcas.html">Marcas</a></li>
+          <li><a href="ubicaciones.html">Ubicaciones</a></li>
+          <li><a href="contacto.html">Contáctenos</a></li>
         </ul>
       </nav>
       <a href="tel:3011959854" class="btn-nav">📞 314 395 22 78</a>
@@ -44,9 +42,7 @@
     </div>
   </header>
 
-  <!-- HERO -->
   <section class="hero" id="inicio">
-    <!-- Partículas decorativas -->
     <div class="hero-particles" aria-hidden="true">
       <span class="particle">⚙</span>
       <span class="particle">🔩</span>
@@ -71,7 +67,6 @@
     </div>
   </section>
 
-  <!-- STATS BAR -->
   <section class="stats-bar">
     <div class="container stats-grid">
       <div class="stat-item">
@@ -93,12 +88,11 @@
     </div>
   </section>
 
-  <!-- NOSOTROS -->
-  <section class="about" id="nosotros">
+  <section class="about about-teaser">
     <div class="container about-inner">
       <div class="about-text fade-in">
         <span class="section-label">IMPORTADORA DE REPUESTOS</span>
-        <h2>25 Años de trayectoria<br />en el mercado de autopartes</h2>
+        <h2>25 Años de trayectoria en el mercado de autopartes</h2>
         <p>Tenemos para usted una gran variedad de inventarios en autopartes para maquinaria pesada, camiones, tractocamiones y más. Trabajamos con los mejores proveedores a nivel nacional e internacional.</p>
         <p>Nuestros puntos de venta en Bogotá, Medellín y Barranquilla nos permiten llegar a todo el territorio colombiano con despachos ágiles y seguros.</p>
         <a href="#contacto" class="btn-primary">Cotiza aquí &nbsp;3011959854</a>
@@ -128,8 +122,7 @@
     </div>
   </section>
 
-  <!-- SERVICIOS -->
-  <section class="services" id="servicios">
+  <section class="services-preview" id="servicios-preview">
     <div class="container">
       <span class="section-label center fade-in">IMPORTADORA DE REPUESTOS</span>
       <h2 class="section-title fade-in">Nuestros Servicios</h2>
@@ -389,7 +382,6 @@
           </div>
           <p>"Compre una culata, inicialmente me dio algo de incertidumbre porque por Internet se presta para estafas, sin embargo todo fue completamente honesto, el señor muy diligente y serio con la entrega, me llegó de un día a otro, todo en excelente condiciones, los recomiendo."</p>
         </div>
-
         <div class="testimonial-card fade-in delay-1">
           <div class="testimonial-header">
             <div class="author-avatar av-purple">D</div>
@@ -410,7 +402,6 @@
           </div>
           <p>"Partes buenas y buenos precios."</p>
         </div>
-
       </div>
 
       <div class="google-cta fade-in">
@@ -500,7 +491,6 @@
     <span class="wsp-tooltip">¡Cotiza ahora!</span>
   </a>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-top">
       <div class="footer-col">
@@ -513,20 +503,21 @@
       <div class="footer-col">
         <h4>Navegación</h4>
         <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#marcas">Marcas</a></li>
-          <li><a href="#contacto">Contáctenos</a></li>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="marcas.html">Marcas</a></li>
+          <li><a href="ubicaciones.html">Ubicaciones</a></li>
+          <li><a href="contacto.html">Contáctenos</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Servicios</h4>
         <ul>
-          <li><a href="#servicios">Repuestos Importados OEM</a></li>
-          <li><a href="#servicios">Repuestos Nacionales OEM</a></li>
-          <li><a href="#servicios">Camiones y Tractocamiones</a></li>
-          <li><a href="#servicios">Maquinaria Agrícola</a></li>
+          <li><a href="servicios.html">Repuestos Importados OEM</a></li>
+          <li><a href="servicios.html">Repuestos Nacionales OEM</a></li>
+          <li><a href="servicios.html">Camiones y Tractocamiones</a></li>
+          <li><a href="servicios.html">Maquinaria Agrícola</a></li>
         </ul>
       </div>
       <div class="footer-col">
