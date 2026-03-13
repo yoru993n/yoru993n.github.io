@@ -58,7 +58,7 @@ function handleSubmit(e) {
   const msg = encodeURIComponent(
     `Hola! Me llamo *${nombre}* (${telefono}).\nEquipo: *${equipo}*\nNecesito: ${desc}`
   );
-  window.open(`https://wa.me/573143952278?text=${msg}`, '_blank');
+  window.open(`https://wa.me/573011959854?text=${msg}`, '_blank');
   if (e.target && e.target.style) e.target.style.display = 'none';
   const success = document.getElementById('form-success');
   if (success) success.style.display = 'block';
