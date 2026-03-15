@@ -153,6 +153,12 @@ body { font-family: 'Inter', sans-serif; color: var(--text); background: #fff; l
   text-decoration: none;
 }
 .logo-gear { font-size: 1.4rem; color: var(--primary); animation: spin-slow 8s linear infinite; }
+.logo-icon {
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+  display: block;
+}
 .logo-accent { color: var(--primary); margin-left: .15rem; }
 
 @keyframes spin-slow { to { transform: rotate(360deg); } }
